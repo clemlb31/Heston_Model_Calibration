@@ -31,9 +31,6 @@ class CalibrationResult:
 def compare_results(results: list[CalibrationResult],
                     true_params: HestonParams | None = None):
     """Affiche un tableau comparatif des resultats."""
-    print("\n" + "=" * 90)
-    print("  COMPARAISON DES METHODES DE CALIBRATION")
-    print("=" * 90)
 
     header = (
         f"{'Methode':<28} {'Temps':>8} {'Evals':>7} "
@@ -59,6 +56,5 @@ def compare_results(results: list[CalibrationResult],
             f"{t.sigma:>7.4f} {t.rho:>7.4f}"
         )
 
-    print("=" * 90)
     best = min(results, key=lambda r: r.rmse_iv)
     print(f"\n  Meilleure methode : {best.method} (RMSE IV = {best.rmse_iv:.4f})")

@@ -151,7 +151,7 @@ La ponderation par $1/\mathcal{V}_i$ (inverse du vega) transforme les erreurs de
 | Parametre | Min | Max |
 |-----------|-----|-----|
 | $v_0$ | 0.0001 | 1.0 |
-| $\kappa$ | 0.001 | 10.0 |
+| $\kappa$ | 0.001 | 20.0 |
 | $\theta$ | 0.0001 | 1.0 |
 | $\sigma$ | 0.01 | 3.0 |
 | $\rho$ | -0.99 | 0.50 |

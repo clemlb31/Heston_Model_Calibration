@@ -24,7 +24,7 @@ class HestonCalibrator:
     """
 
     BOUNDS_LOWER = np.array([1e-4, 1e-3, 1e-4, 1e-2, -0.99])
-    BOUNDS_UPPER = np.array([1.0,  10.0, 1.0,  3.0,   0.50])
+    BOUNDS_UPPER = np.array([1.0,  20.0, 1.0,  3.0,   0.50])
 
     def __init__(self, markets: list[MarketData] | MarketData):
         if isinstance(markets, MarketData):
